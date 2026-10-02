@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    background-color: rgb(203, 203, 203);
+}
+
+header,
+main,
+footer {
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+header {
+    background-color: #2776d2;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    padding: 10px;
+    color: white;
+    display: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+section img {
+    border: 3px solid white;
+    box-shadow: 1px 5px 6px #000000;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    background-color: #2776d2;
+    color: white;
+}
+
+
+/* TABLET */
+@media screen and (min-width: 600px) {
+
+    nav a {
+        display: inline-block;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 1000px) {
+
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
